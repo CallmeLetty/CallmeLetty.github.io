@@ -8,7 +8,7 @@
     
     <meta name="description" content="Keep learning.Keep explorating.">
     
-    <link rel="preload" href="/growth/assets/css/0.styles.aa2aca0a.css" as="style"><link rel="preload" href="/growth/assets/js/app.c74062fb.js" as="script"><link rel="preload" href="/growth/assets/js/2.63c13255.js" as="script"><link rel="preload" href="/growth/assets/js/8.578146cf.js" as="script"><link rel="prefetch" href="/growth/assets/js/3.2d654790.js"><link rel="prefetch" href="/growth/assets/js/4.94733d25.js"><link rel="prefetch" href="/growth/assets/js/5.2ea06e07.js"><link rel="prefetch" href="/growth/assets/js/6.8d81f0ec.js"><link rel="prefetch" href="/growth/assets/js/7.768bcc05.js">
+    <link rel="preload" href="/growth/assets/css/0.styles.aa2aca0a.css" as="style"><link rel="preload" href="/growth/assets/js/app.d7baf46e.js" as="script"><link rel="preload" href="/growth/assets/js/2.63c13255.js" as="script"><link rel="preload" href="/growth/assets/js/9.f112da3c.js" as="script"><link rel="prefetch" href="/growth/assets/js/3.2707812c.js"><link rel="prefetch" href="/growth/assets/js/4.94733d25.js"><link rel="prefetch" href="/growth/assets/js/5.2ea06e07.js"><link rel="prefetch" href="/growth/assets/js/6.8d81f0ec.js"><link rel="prefetch" href="/growth/assets/js/7.768bcc05.js"><link rel="prefetch" href="/growth/assets/js/8.2d51bb22.js">
     <link rel="stylesheet" href="/growth/assets/css/0.styles.aa2aca0a.css">
   </head>
   <body>
@@ -63,6 +63,6 @@ NSArray <span class="token operator">*</span>list <span class="token operator">=
 <span class="token punctuation">}</span>
 
 </code></pre></div><ul><li><p>优势：协议的所有实现仍然在模块内部，所以不需要写反射代码。同时对外暴露的只有协议，符合团队协作的“面向协议编程”的思想。</p></li> <li><p>劣势：</p></li></ul> <p>- 如果服务提供方和使用方依赖的是公共模块中的同一份协议（protocol）, 当协议内容改变时，会存在所有服务依赖模块编译失败的风险。（方案一）</p> <p>- 需要一个注册过程，将 Protocol 协议与具体实现绑定起来。（方案一）</p> <h3 id="基于通知的广播方案"><a href="#基于通知的广播方案" class="header-anchor">#</a> 基于通知的广播方案</h3> <ul><li><p>基于系统的 NSNotificationCenter。</p></li> <li><p>模块化通讯方案中，更多的是把通知方案作为以上几种方案的补充。</p></li> <li><p>优势</p></li></ul> <p>- 实现简单，非常适合处理一对多的通讯场景。</p> <ul><li>劣势</li></ul> <p>- 仅适用于简单通讯场景。</p> <p>- 复杂数据传输，同步调用等方式都不太方便。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/growth/assets/js/app.c74062fb.js" defer></script><script src="/growth/assets/js/2.63c13255.js" defer></script><script src="/growth/assets/js/8.578146cf.js" defer></script>
+    <script src="/growth/assets/js/app.d7baf46e.js" defer></script><script src="/growth/assets/js/2.63c13255.js" defer></script><script src="/growth/assets/js/9.f112da3c.js" defer></script>
   </body>
 </html>

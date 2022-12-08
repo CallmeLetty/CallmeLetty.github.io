@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础 | Yakamoz</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Keep learning.Keep explorating.">
+    
+    <link rel="preload" href="/growth/assets/css/0.styles.aa2aca0a.css" as="style"><link rel="preload" href="/growth/assets/js/app.d7baf46e.js" as="script"><link rel="preload" href="/growth/assets/js/2.63c13255.js" as="script"><link rel="preload" href="/growth/assets/js/8.2d51bb22.js" as="script"><link rel="prefetch" href="/growth/assets/js/3.2707812c.js"><link rel="prefetch" href="/growth/assets/js/4.94733d25.js"><link rel="prefetch" href="/growth/assets/js/5.2ea06e07.js"><link rel="prefetch" href="/growth/assets/js/6.8d81f0ec.js"><link rel="prefetch" href="/growth/assets/js/7.768bcc05.js"><link rel="prefetch" href="/growth/assets/js/9.f112da3c.js">
+    <link rel="stylesheet" href="/growth/assets/css/0.styles.aa2aca0a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/growth/" class="home-link router-link-active"><!----> <span class="site-name">Yakamoz</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/growth/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/CallmeLetty" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/growth/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/CallmeLetty" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/growth/iOS进阶" class="sidebar-heading clickable open"><span>iOS进阶</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/growth/iOS进阶/模块化方案探究.html" class="sidebar-link">模块化方案探究</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h1> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <ol><li><p>纯C语言，苹果公司为多核的并行运算提出的解决方案</p></li> <li><p><strong><strong>将任务添加到队列，并指定执行任务的函数</strong></strong></p></li> <li><p>GCD会自动利用更多的cpu内核</p></li> <li><p>GCD会自动管理线程的生命周期【创建线程、调度任务、销毁线程】</p></li> <li><p>程序员只需要告诉GCD想要执行什么任务，不需要编写任何线程管理代码</p></li></ol> <h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <ol><li><p>任务使用block封装【无参数、无返回值】</p></li> <li><p>异步函数<code>dispatch_async</code></p></li></ol> <p>- 不会等待当前语句执行完毕，就可以执行下一条语句</p> <p>- <strong><strong>会</strong></strong>开启线程执行block的任务</p> <ol start="3"><li>同步函数<code>dispatch_sync</code></li></ol> <p>- 必须等待当前语句执行完毕，才会执行下一条语句</p> <p>- 不会开启线程</p> <ul><li>无论同步函数还是异步函数都是耗时操作</li></ul> <h2 id="队列"><a href="#队列" class="header-anchor">#</a> 队列</h2> <p>数据结构FIFO。</p> <p>创建函数如下：</p> <div class="language-objectivec extra-class"><pre class="language-objectivec"><code>
+<span class="token comment">/*
+
+* @param label：附加到队列的字符串标签。可选参数，可能为NULL。
+
+＊
+
+* @param attr：一个预定义的属性。
+
+* 如DISPATCH_QUEUE_SERIAL，DISPATCH_QUEUE_CONCURRENT，
+
+* 或者调用dispatch_queue_attr_make_with_*函数的结果。
+
+* 若传NULL，则为DISPATCH_QUEUE_SERIAL
+
+*
+
+* @result：新创建的调度队列。
+
+*/</span>
+
+dispatch_queue_t
+
+<span class="token function">dispatch_queue_create</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>_Nullable DISPATCH_UNSAFE_INDEXABLE label<span class="token punctuation">,</span>
+
+                      dispatch_queue_attr_t _Nullable attr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>分类：</p> <ol><li>串行队列</li></ol> <p>- 顺序执行</p> <p>- 创建： <code>dispatch_queue_create(&quot;serial&quot;,DISPATCH_QUEUE_SERIAL)</code></p> <ol start="2"><li>并发队列</li></ol> <p>- 一次可以<strong><strong>调度</strong></strong>【非执行】多个任务</p> <p>- 创建：<code>dispatch_queue_create(&quot;concurrent&quot;,DISPATCH_QUEUE_CONCURRENT)</code></p> <p></p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/00ba55c51c75429daa1d4d76f06722f6~tplv-k3u1fbpfcp-watermark.image" alt=""></p> <p></p> <h1 id="函数与队列"><a href="#函数与队列" class="header-anchor">#</a> 函数与队列</h1> <p>| 队列\函数 | 同步函数 | 异步函数 |</p> <p>| --- | --- | --- |</p> <p>| 串行队列 | 不开启线程，在当前线程执行，任务一个接一个，使用不当会产生堵塞 | 不开启线程，在当前线程执行，任务一个接一个 |</p> <p>| 并发队列 | 有开启线程的能力，任务一个接一个 | 开启线程，在当前线程执行，任务异步执行，没有顺序，与cpu调度有关 |</p> <ul><li>主队列</li></ul> <p>- <code>dispatch_get_main_queue()</code></p> <p>- 专门用来在主线程上调度任务的<strong><strong>串行队列</strong></strong></p> <p>- 不会开启线程</p> <p>- 如果当前主线程有任务执行，那么无论主队列中添加了什么任务，都不会被调度</p> <ul><li>全局并发队列</li></ul> <p>- <code>dispatch_get_global_queue(0,0)</code></p> <p>- 使用多线程开发时，如果对队列没有特殊需求，在执行<strong><strong>异步任务</strong></strong>时，可以直接使用该队列</p> <p>- 不建议使用全局并发队列，不利于业务剥离及调试</p> <ul><li><strong><strong>死锁</strong></strong>：由于串行队列没有开辟线程的能力，在一个<strong><strong>串行队列</strong></strong>中<strong><strong>同步</strong></strong>添加block任务,导致本线程等待<code>dispatch_sync</code>函数执行完后处理block，而block等待本线程执行<code>dispatch_sync</code>函数结束，函数结束又需要block执行结束，导致相互等待，产生死锁</li></ul> <h2 id="串行和并发的底层探究"><a href="#串行和并发的底层探究" class="header-anchor">#</a> 串行和并发的底层探究</h2> <h3 id="队列底层结构"><a href="#队列底层结构" class="header-anchor">#</a> 队列底层结构</h3> <p>首先我们要知道<code>dispatch_queue_t</code>是什么，通过层层宏定义跳转可以直到<code>dispatch_queue_t</code> 本质是<code>dispatch_queue_s</code>，根类为<code>dispatch_object_s</code> （联合体，其中有<code>dispatch_queue_s</code>），以下只截取重点代码</p> <div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token comment">// dispatch_queue_s结构体定义如下</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_queue_s</span> <span class="token punctuation">{</span>
+
+<span class="token function">DISPATCH_QUEUE_CLASS_HEADER</span><span class="token punctuation">(</span>queue<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>__dq_opaque1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name function">DISPATCH_QUEUE_CLASS_HEADER</span><span class="token expression"><span class="token punctuation">(</span>x<span class="token punctuation">,</span> __pointer_sized_field__<span class="token punctuation">)</span> </span><span class="token punctuation">\</span>
+</span>
+<span class="token function">_DISPATCH_QUEUE_CLASS_HEADER</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> __pointer_sized_field__<span class="token punctuation">)</span><span class="token punctuation">;</span> \
+
+<span class="token keyword">unsigned</span> <span class="token keyword">long</span> dq_serialnum<span class="token punctuation">;</span> \
+
+<span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>dq_label<span class="token punctuation">;</span> \
+
+<span class="token function">DISPATCH_UNION_LE</span><span class="token punctuation">(</span><span class="token class-name">uint32_t</span> <span class="token keyword">volatile</span> dq_atomic_flags<span class="token punctuation">,</span> \
+
+<span class="token keyword">const</span> <span class="token class-name">uint16_t</span> dq_width<span class="token punctuation">,</span> \
+
+<span class="token keyword">const</span> <span class="token class-name">uint16_t</span> __dq_opaque2 \
+
+<span class="token punctuation">)</span><span class="token punctuation">;</span> \
+
+<span class="token class-name">dispatch_priority_t</span> dq_priority<span class="token punctuation">;</span> \
+
+<span class="token keyword">union</span> <span class="token punctuation">{</span> \
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_queue_specific_head_s</span> <span class="token operator">*</span>dq_specific_head<span class="token punctuation">;</span> \
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_source_refs_s</span> <span class="token operator">*</span>ds_refs<span class="token punctuation">;</span> \
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_timer_source_refs_s</span> <span class="token operator">*</span>ds_timer_refs<span class="token punctuation">;</span> \
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_mach_recv_refs_s</span> <span class="token operator">*</span>dm_recv_refs<span class="token punctuation">;</span> \
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_channel_callbacks_s</span> <span class="token keyword">const</span> <span class="token operator">*</span>dch_callbacks<span class="token punctuation">;</span> \
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span> \
+
+<span class="token keyword">int</span> <span class="token keyword">volatile</span> dq_sref_cnt
+
+</code></pre></div><p>队列分为串行和并发，下面通过libffi的源码来对其在<strong><strong>创建</strong></strong>和<strong><strong>执行任务</strong></strong>时期的底层实现做一个大致的了解和学习。</p> <h3 id="创建"><a href="#创建" class="header-anchor">#</a> 创建</h3> <p>创建queue都是通过<code>dispatch_queue_create(&quot;&quot;,attr)</code> 方法，通过对attr传入的不同参数来区分串行和并发。<code>dispatch_queue_create</code> 底层调用的是<code>_dispatch_lane_create_with_target</code>函数。下面主要探究该方法</p> <ol><li>规范化参数(<code>qos</code>, <code>overcommit</code>, <code>tq</code>)【优先级处理，并发队列和串行队列的attribute处理】</li></ol> <div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token comment">// dqa就是我们创建时传入的attr，若为串行队列，则dqai为空结构体对象</span>
+
+<span class="token class-name">dispatch_queue_attr_info_t</span> dqai <span class="token operator">=</span> <span class="token function">_dispatch_queue_attr_to_info</span><span class="token punctuation">(</span>dqa<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// dispatch_queue_attr_info_s</span>
+
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span> <span class="token class-name">dispatch_queue_attr_info_s</span> <span class="token punctuation">{</span>
+
+<span class="token class-name">dispatch_qos_t</span> dqai_qos <span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span>      dqai_relpri <span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">;</span>
+
+<span class="token class-name">uint16_t</span> dqai_overcommit<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token class-name">uint16_t</span> dqai_autorelease_frequency<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token class-name">uint16_t</span> dqai_concurrent<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token class-name">uint16_t</span> dqai_inactive<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span> <span class="token class-name">dispatch_queue_attr_info_t</span><span class="token punctuation">;</span>
+
+</code></pre></div><ol><li>初始化队列。</li></ol> <div class="language-c extra-class"><pre class="language-c"><code>
+    <span class="token comment">// 首先可以看到最终返回的语句如下</span>
+
+    <span class="token keyword">return</span> <span class="token function">_dispatch_trace_queue_create</span><span class="token punctuation">(</span>dq<span class="token punctuation">)</span><span class="token punctuation">.</span>_dq<span class="token punctuation">;</span>
+
+    
+
+    <span class="token comment">// 找到dq对象初始化的地方</span>
+
+    <span class="token comment">// 1. 开辟一个dispatch_lane_s大小的内存，创建dispatch_lane_t对象</span>
+
+    <span class="token class-name">dispatch_lane_t</span> dq <span class="token operator">=</span> <span class="token function">_dispatch_object_alloc</span><span class="token punctuation">(</span>vtable<span class="token punctuation">,</span>
+
+    <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">dispatch_lane_s</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    
+
+    <span class="token comment">// 2. 初始化该对象</span>
+
+    <span class="token comment">// 对于这个初始化方法来说，第三个参数表示的是该队列的“宽度”。</span>
+
+    <span class="token comment">// 如果是并发，宽度为最大值，若为串行，宽度为1</span>
+
+    <span class="token function">_dispatch_queue_init</span><span class="token punctuation">(</span>dq<span class="token punctuation">,</span>
+
+     dqf<span class="token punctuation">,</span>
+
+     dqai<span class="token punctuation">.</span>dqai_concurrent <span class="token operator">?</span> DISPATCH_QUEUE_WIDTH_MAX <span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+
+     DISPATCH_QUEUE_ROLE_INNER <span class="token operator">|</span> <span class="token punctuation">(</span>dqai<span class="token punctuation">.</span>dqai_inactive <span class="token operator">?</span> DISPATCH_QUEUE_INACTIVE <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p></p> <h3 id="执行任务"><a href="#执行任务" class="header-anchor">#</a> 执行任务</h3> <h2 id="同步与异步的底层探究"><a href="#同步与异步的底层探究" class="header-anchor">#</a> 同步与异步的底层探究</h2> <p>重点探究：两种函数Block什么时候调用</p> <h3 id="dispatch-sync-同步函数"><a href="#dispatch-sync-同步函数" class="header-anchor">#</a> dispatch_sync 同步函数</h3> <div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token keyword">void</span> <span class="token function">dispatch_sync</span><span class="token punctuation">(</span><span class="token class-name">dispatch_queue_t</span> dq<span class="token punctuation">,</span> <span class="token class-name">dispatch_block_t</span> work<span class="token punctuation">)</span>
+
+<span class="token punctuation">{</span>
+
+<span class="token function">_dispatch_sync_f</span><span class="token punctuation">(</span>dq<span class="token punctuation">,</span> work<span class="token punctuation">,</span> <span class="token function">_dispatch_Block_invoke</span><span class="token punctuation">(</span>work<span class="token punctuation">)</span><span class="token punctuation">,</span> dc_flags<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+
+<span class="token comment">// _dispatch_Block_invoke如下所示，也就是说要重点关注这个invoke什么时候调用</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name function">_dispatch_Block_invoke</span><span class="token expression"><span class="token punctuation">(</span>bb<span class="token punctuation">)</span> </span><span class="token punctuation">\</span>
+</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">dispatch_function_t</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Block_layout</span> <span class="token operator">*</span><span class="token punctuation">)</span>bb<span class="token punctuation">)</span><span class="token operator">-&gt;</span>invoke<span class="token punctuation">)</span>
+
+</code></pre></div><ol><li>上述<code>_dispatch_sync_f</code>的实现中，若为串行队列，会调用<code>_dispatch_barrier_sync_f</code> ，在该方法中，通过层层跳转，核心执行代码如下</li></ol> <p></p> <p>```c</p> <p>// 串行 + 同步</p> <p>// 这里的func就是上面创建的dispatch_function_t对象</p> <p>_dispatch_lane_barrier_sync_invoke_and_complete(dl,</p> <p>ctxt,</p> <p>func</p> <p>DISPATCH_TRACE_ARG(_dispatch_trace_item_sync_push_pop(</p> <p>dq, ctxt, func, dc_flags | DC_FLAG_BARRIER)));</p> <p></p> <p>// 上述函数的实现中，主要需要关注下方代码，可以看到是直接调用</p> <p>_dispatch_client_callout(ctxt, func);</p> <p>```</p> <p></p> <p>通过bt指令打印调用堆栈也可以验证</p> <p><img src="%E3%80%90iOS%E5%BA%95%E5%B1%82%E6%8E%A2%E7%A9%B6%E3%80%91GCD%20d924fbca0730486583e94b3e759b2217/Untitled.png" alt="Untitled"></p> <ol><li>若为并发队列，会调用<code>_dispatch_sync_f_slow</code></li></ol> <div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token comment">// 1. 封装context对象，存储func</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">dispatch_sync_context_s</span> dsc <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+···
+
+<span class="token punctuation">.</span>dc_func     <span class="token operator">=</span> _dispatch_async_and_wait_invoke<span class="token punctuation">,</span>
+
+<span class="token punctuation">.</span>dc_ctxt     <span class="token operator">=</span> <span class="token operator">&amp;</span>dsc<span class="token punctuation">,</span>
+
+<span class="token punctuation">.</span>dc_priority <span class="token operator">=</span> pp <span class="token operator">|</span> _PTHREAD_PRIORITY_ENFORCE_FLAG<span class="token punctuation">,</span>
+
+<span class="token punctuation">.</span>dsc_func    <span class="token operator">=</span> func<span class="token punctuation">,</span>
+
+···
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 2. 找到调用dsc和func相关的核心代码</span>
+
+<span class="token function">_dispatch_sync_invoke_and_complete_recurse</span><span class="token punctuation">(</span>top_dq<span class="token punctuation">,</span> ctxt<span class="token punctuation">,</span> func<span class="token punctuation">,</span>top_dc_flags
+
+<span class="token function">DISPATCH_TRACE_ARG</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>dsc<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 实际调用如下所示，可以看到是直接调用</span>
+
+<span class="token function">_dispatch_client_callout</span><span class="token punctuation">(</span>ctxt<span class="token punctuation">,</span> func<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>通过bt指令打印调用堆栈也可以验证</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/096f1eaac5ba406d98dc2df9232fc0a3~tplv-k3u1fbpfcp-zoom-1.image" alt="Untitled"></p> <ul><li>综上所述，无论是串行队列还是并发队列，只要是同步函数，任务添加到队列中后就会直接调用</li></ul> <h3 id="dispatch-async-异步函数"><a href="#dispatch-async-异步函数" class="header-anchor">#</a> dispatch_async 异步函数</h3> <div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token comment">// 我们需要重点关注的就是传入的参数work block什么时候调用</span>
+
+<span class="token keyword">void</span> <span class="token function">dispatch_async</span><span class="token punctuation">(</span><span class="token class-name">dispatch_queue_t</span> dq<span class="token punctuation">,</span> <span class="token class-name">dispatch_block_t</span> work<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token class-name">dispatch_continuation_t</span> dc <span class="token operator">=</span> <span class="token function">_dispatch_continuation_alloc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+···
+
+<span class="token class-name">dispatch_qos_t</span> qos <span class="token operator">=</span> <span class="token function">_dispatch_continuation_init</span><span class="token punctuation">(</span>dc<span class="token punctuation">,</span> dq<span class="token punctuation">,</span> work<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> dc_flags<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">_dispatch_continuation_async</span><span class="token punctuation">(</span>dq<span class="token punctuation">,</span> dc<span class="token punctuation">,</span> qos<span class="token punctuation">,</span> dc<span class="token operator">-&gt;</span>dc_flags<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>在创建<code>dispatch_qos_t</code>对象的方法中，主要做了两件事：</p> <ol><li><p>封装任务</p></li> <li><p>优先级处理</p></li></ol> <ul><li>为什么异步函数需要多这样一步呢？</li></ul> <p>1. 异步调用可能会产生无序的情况，无序的情况意味着<strong><strong>优先级</strong></strong>在调用的时候是参考衡量的依据</p> <p>2. 异步函数的回调必然也是异步的，所以我们需要将block保存起来，等待cpu的调度的时候再拿出来</p> <p></p> <p></p> <p></p> <p>继续探究<code>_dispatch_continuation_async</code>的实现，在其函数体中只需要关注如下这句</p> <div class="language-c extra-class"><pre class="language-c"><code>
+<span class="token comment">// dqu._dq：dispatch_queue_s队列，对应下面的x</span>
+
+<span class="token comment">// dc：上面第一句创建的dispatch_continuation_t对象，对应下面的y</span>
+
+<span class="token comment">// qos：上面封装了任务和优先级的dispatch_qos_t对象，对应下面的z</span>
+
+<span class="token function">dx_push</span><span class="token punctuation">(</span>dqu<span class="token punctuation">.</span>_dq<span class="token punctuation">,</span> dc<span class="token punctuation">,</span> qos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name function">dx_push</span><span class="token expression"><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span> <span class="token function">dx_vtable</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">dq_push</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span></span></span>
+
+</code></pre></div><p>由于我们的任务是封装在<code>qos</code>中，所以对于<code>dx_vtable</code>不过多探究，其主要是对队列类型做一个判断，还是重点看看使用到<code>z</code> （<code>qos</code>）的<code>dq_push</code> 。在<code>libdispatch</code>的源码中对于不同的队列类型<code>dq_push</code>有不同的实现。</p> <p>由于异步函数的调用是cpu调度的，所以在代码中可能很难直接找到调度的地方，我们可以bt一下然后倒推，以<strong><strong>串行队列</strong></strong>为例，如下图所示</p> <div class="language-c extra-class"><pre class="language-c"><code>
+frame #<span class="token number">0</span><span class="token operator">:</span>  YKOCDemo`__57<span class="token operator">-</span><span class="token punctuation">[</span>AppDelegate application<span class="token operator">:</span>didFinishLaunchingWithOptions<span class="token operator">:</span><span class="token punctuation">]</span><span class="token function">_block_invoke</span><span class="token punctuation">(</span><span class="token punctuation">.</span>block_descriptor<span class="token operator">=</span><span class="token number">0x0000000106e751f8</span><span class="token punctuation">)</span> at AppDelegate<span class="token punctuation">.</span>m<span class="token operator">:</span><span class="token number">27</span><span class="token operator">:</span><span class="token number">9</span>
+
+frame #<span class="token number">1</span><span class="token operator">:</span>  libdispatch<span class="token punctuation">.</span>dylib`_dispatch_call_block_and_release <span class="token operator">+</span> <span class="token number">12</span>
+
+frame #<span class="token number">2</span><span class="token operator">:</span>  libdispatch<span class="token punctuation">.</span>dylib`_dispatch_client_callout <span class="token operator">+</span> <span class="token number">8</span>
+
+frame #<span class="token number">3</span><span class="token operator">:</span>  libdispatch<span class="token punctuation">.</span>dylib`_dispatch_lane_serial_drain <span class="token operator">+</span> <span class="token number">1064</span>
+
+frame #<span class="token number">4</span><span class="token operator">:</span>  libdispatch<span class="token punctuation">.</span>dylib`_dispatch_lane_invoke <span class="token operator">+</span> <span class="token number">441</span>
+
+frame #<span class="token number">5</span><span class="token operator">:</span>  libdispatch<span class="token punctuation">.</span>dylib`_dispatch_workloop_worker_thread <span class="token operator">+</span> <span class="token number">959</span>
+
+frame #<span class="token number">6</span><span class="token operator">:</span>  libsystem_pthread<span class="token punctuation">.</span>dylib`_pthread_wqthread <span class="token operator">+</span> <span class="token number">326</span>
+
+frame #<span class="token number">7</span><span class="token operator">:</span>  libsystem_pthread<span class="token punctuation">.</span>dylib`start_wqthread <span class="token operator">+</span> <span class="token number">15</span>
+
+</code></pre></div><p><code>_dispatch_workloop_worker_thread</code>函数的调度在<code>_dispatch_root_queues_init_once</code>函数中,通过<code>_dispatch_root_queues_init</code>的调度触发</p> <h1 id="流程控制方案"><a href="#流程控制方案" class="header-anchor">#</a> 流程控制方案</h1> <h2 id="栅栏函数"><a href="#栅栏函数" class="header-anchor">#</a> 栅栏函数</h2> <div class="language-objectivec extra-class"><pre class="language-objectivec"><code>
+<span class="token comment">// 前面的任务执行完毕才会来到这里</span>
+
+dispatch_barrier_async
+
+  
+
+
+<span class="token comment">// 作用同上。但是这个会堵塞线程，影响后面的任务执行</span>
+
+dispatch_barrier_sync
+
+</code></pre></div><ul><li><p>控制任务执行顺序，同步</p></li> <li><p>栅栏函数只能控制 ** <strong>!同一个! !自定义的! !并发!</strong> ** 队列</p></li></ul> <h2 id="信号量"><a href="#信号量" class="header-anchor">#</a> 信号量</h2> <div class="language-objectivec extra-class"><pre class="language-objectivec"><code>
+  
+
+
+<span class="token comment">// 创建信号量，传入信号量的初始值</span>
+
+<span class="token function">dispatch_semaphore_create</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>intptr_t value<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+
+<span class="token comment">/* 
+
+* 
+
+等待信号量。
+
+* 如果信号量值为0，那么该函数就会一直等待（相当于阻塞当前线程）
+
+* 直到该函数等待的信号量的值大于等于1，该函数会对信号量的值进行-1操作，然后返回。
+
+*/</span>
+
+<span class="token function">dispatch_semaphore_wait</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_semaphore_t  _Nonnull dsema<span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token operator">&lt;</span>dispatch_time_t timeout<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 发送信号量。该函数会对信号量的值进行+1操作</span>
+
+<span class="token function">dispatch_semaphore_signal</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_semaphore_t  _Nonnull dsema<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+
+</code></pre></div><ul><li><p>同步→当锁</p></li> <li><p>控制GCD最大并发数</p></li></ul> <h2 id="调度组"><a href="#调度组" class="header-anchor">#</a> 调度组</h2> <div class="language-objectivec extra-class"><pre class="language-objectivec"><code>
+<span class="token comment">// 创建调度组</span>
+
+dispatch_group_t group <span class="token operator">=</span> <span class="token function">dispatch_group_create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 进组任务</span>
+
+<span class="token function">dispatch_group_async</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_group_t  _Nonnull group<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+
+                     <span class="token operator">&lt;</span>dispatch_queue_t  _Nonnull queue<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+
+                     <span class="token operator">&lt;</span><span class="token operator">^</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>block<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 进组任务执行完毕通知</span>
+
+<span class="token function">dispatch_group_notify</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_group_t  _Nonnull group<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+
+                      <span class="token operator">&lt;</span>dispatch_queue_t  _Nonnull queue<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+
+                      <span class="token operator">&lt;</span><span class="token operator">^</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>block<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 进组任务执行等待时间</span>
+
+<span class="token function">dispatch_group_wait</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_group_t  _Nonnull group<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+
+                    <span class="token operator">&lt;</span>dispatch_time_t timeout<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 进组</span>
+
+<span class="token function">dispatch_group_enter</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_group_t  _Nonnull group#<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 出组</span>
+
+<span class="token function">dispatch_group_leave</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>dispatch_group_t  _Nonnull group<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>注意搭配使用</p> <ul><li>进组和出组-成对，先进后出</li></ul> <h2 id="dispatch-source-t"><a href="#dispatch-source-t" class="header-anchor">#</a> dispatch_source_t</h2> <div class="language-objectivec extra-class"><pre class="language-objectivec"><code>
+<span class="token comment">// 创建源</span>
+
+dispatch_source_create
+
+<span class="token comment">// 设置源事件回调</span>
+
+dispatch_source_set_event_handler
+
+<span class="token comment">// 源事件设置数据</span>
+
+dispatch_source_merge_data
+
+<span class="token comment">// 获取源事件数据</span>
+
+dispatch_source_get_data
+
+<span class="token comment">// 继续</span>
+
+dispatch_resume
+
+<span class="token comment">//挂起</span>
+
+dispatch_suspend
+
+</code></pre></div><ul><li><p>CPU负荷非常小，尽量不占用资源</p></li> <li><p>多用于Timer</p></li> <li><p>通过一个条件，来控制任务block是否能执行，并且这个条件可以不断变化</p></li></ul> <h2 id="应用"><a href="#应用" class="header-anchor">#</a> 应用</h2> <p>我们知道可变数组是线程不安全的，那么学习了以上四种方案，尝试解决一下可变数组的线程安全问题。</p> <div class="language-objectivec extra-class"><pre class="language-objectivec"><code>
+dispatch_queue_t concurrentQueue <span class="token operator">=</span> <span class="token function">dispatch_queue_create</span><span class="token punctuation">(</span><span class="token string">&quot;concurrent&quot;</span><span class="token punctuation">,</span>
+
+DISPATCH_QUEUE_CONCURRENT<span class="token punctuation">)</span>
+
+  
+
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> <span class="token number">1000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token function">dispatch_async</span><span class="token punctuation">(</span>concurrentQueue<span class="token punctuation">,</span> <span class="token operator">^</span> <span class="token punctuation">{</span>
+
+···
+
+<span class="token comment">// 原始代码（同一时间对同一片内存空间进行操作，不安全）</span>
+
+<span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>mutableArray addObject<span class="token punctuation">:</span> obj<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  
+
+
+<span class="token comment">// 方案1: 栅栏</span>
+
+<span class="token function">dispatch_barrier_async</span><span class="token punctuation">(</span>concurrentQueue<span class="token punctuation">,</span> <span class="token operator">^</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>mutableArray addObject<span class="token punctuation">:</span> obj<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/growth/assets/js/app.d7baf46e.js" defer></script><script src="/growth/assets/js/2.63c13255.js" defer></script><script src="/growth/assets/js/8.2d51bb22.js" defer></script>
+  </body>
+</html>
